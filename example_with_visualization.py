@@ -1,6 +1,6 @@
 """
-  This script shows an example of a simulation carried out on a cantilever rod using the PyElastica simulation software, and also using the TendonForces forcing module to apply the effects of 
-  tendon actuation on the rod. This script also includes the use of matplotlib and moviepy to facilitate the visualization of the results output by PyElastica.
+This script shows an example of a simulation carried out on a cantilever rod using the PyElastica simulation software, and also using the TendonForces forcing module to apply the effects of 
+tendon actuation on the rod. This script also includes the use of matplotlib and moviepy to facilitate the visualization of the results output by PyElastica.
 """
 
 from elastica.modules import (
