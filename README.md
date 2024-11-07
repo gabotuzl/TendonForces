@@ -39,4 +39,4 @@ The structure of TendonForces is such that it is allowed to use several differen
 Example Result: 
 ![alt text][logo]
 
-[logo]: https://github.com/TendonForces/results/arbitrary_tendons.png "Results for abitrary tendons"
+[logo]: https://github.com/TendonForces/results/arbitrary_tendons_1.png "Results for abitrary tendons"
