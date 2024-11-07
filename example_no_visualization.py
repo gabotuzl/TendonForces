@@ -22,7 +22,6 @@ from elastica.timestepper import integrate
 
 import numpy as np
 from collections import defaultdict
-import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import sys
 
