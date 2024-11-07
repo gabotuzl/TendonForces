@@ -22,9 +22,12 @@ from elastica.timestepper import integrate
 
 import numpy as np
 from collections import defaultdict
-import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import sys
+
+import matplotlib.pyplot as plt
+from moviepy.editor import VideoClip
+from moviepy.video.io.bindings import mplfig_to_npimage
 
 plt.switch_backend('TkAgg')
 plt.close("all")
@@ -33,7 +36,6 @@ class CantileverRodSimulator(
     BaseSystemCollection,
     Constraints, # Enabled to use boundary conditions 'OneEndFixedBC'
     Forcing,     # Enabled to use forcing 'GravityForces'
-    #Connections, # Enabled to use FixedJoint
     CallBacks,   # Enabled to use callback
     Damping,     # Enabled to use damping models on systems.
 ):
@@ -179,11 +181,6 @@ integrate(timestepper, CantileverRod, final_time, total_steps)
 position_data = callback_data_rod1["position"]
 directors_data = callback_data_rod1["directors"]
 
-
-# Importing movie py libraries for visualization of the simulation
-from moviepy.editor import VideoClip
-from moviepy.video.io.bindings import mplfig_to_npimage
- 
 
 # Creating a 3D plot
 fig = plt.figure()
