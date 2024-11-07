@@ -3,7 +3,8 @@ This repository is a validated forcing module that can be used in the open-sourc
 
 To use this forcing module, you must first be sure to have installed PyElastica properly (follow the procedure in their repo https://github.com/GazzolaLab/PyElastica)
 
-TendonForces is a forcing module that must be imported to the simulation script in order to be used. This can be done by importing TendonForces into the external_forces.py script that is installed by default when installing PyElastica, editing external_forces.py by copying and pasting the whole TendonForces class in it, or directly importing TendonForces into the simulation script (though for sake of order, it is preferred to keep forcing modules in the external_forces.py script).
+TendonForces is a forcing module that must be imported to the simulation script in order to be used. This can be done by either importing TendonForces into the external_forces.py script that is installed by default when installing PyElastica, editing external_forces.py by copying and pasting the whole TendonForces class in it, or directly importing TendonForces into the simulation script (though for sake of order, it is preferred to keep forcing modules in the external_forces.py script).
+NOTE: the examples provided in this repository assume that the TendonForces class is defined inside external_forces.py.
 
 Now, when building the simulator, the TendonForces forcing module must be called and supplied with the tendon configuration parameters. This can be seen in the example provided.
 
