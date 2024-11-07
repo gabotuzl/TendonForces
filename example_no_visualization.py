@@ -32,7 +32,6 @@ class CantileverRodSimulator(
     BaseSystemCollection,
     Constraints, # Enabled to use boundary conditions 'OneEndFixedBC'
     Forcing,     # Enabled to use forcing 'GravityForces'
-    #Connections, # Enabled to use FixedJoint
     CallBacks,   # Enabled to use callback
     Damping,     # Enabled to use damping models on systems.
 ):
