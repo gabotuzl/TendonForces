@@ -35,3 +35,8 @@ n_elements: (int)
         Total amount of nodes in the rod system. This value is set in the simulator and is copied to this class for later use.
 
 The structure of TendonForces is such that it is allowed to use several different tendon configurations simultaneously in one simulation, and because tension is one of the arguments provided, the application of the tendon actuation is always done in an open-loop.
+
+Example Result: 
+![alt text][logo]
+
+[logo]: https://github.com/TendonForces/results/arbitrary_tendons.png "Results for abitrary tendons"
