@@ -1,3 +1,10 @@
+import numpy as np
+from elastica.typing import SystemType, RodType
+
+# Normally NoForces would be included in the forcing module, but PyElastica requires it to be from the original elastica.external_forces module
+from elastica.external_forces import NoForces
+from numba import njit
+
 class TendonForces(NoForces):
     """
     This class applies tendon forcing along the length of the rod.
