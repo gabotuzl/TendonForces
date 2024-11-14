@@ -8,28 +8,28 @@ Now, when building the simulator, the TendonForces forcing module must be called
 The tendon configuration parameters (arguments for the initialization of TendonForces) are the following:
 
 #### vertebra_height: (float)
-        Height at which the tendon contacts the vertebra. It should be the highest point on the tendon-vertebra space.
+Height at which the tendon contacts the vertebra. It should be the highest point on the tendon-vertebra space.
         
 #### num_vertebrae: (int)
-        Amount of vertebrae to be used in the system.
+Amount of vertebrae to be used in the system.
         
 #### first_vertebra_node: (int)
-        The first node to have a vertebra, from the base of the rod to the tip.
+The first node to have a vertebra, from the base of the rod to the tip.
         
 #### final_vertebra_node: (int)
-        The last node to have a vertebra, from the base of the rod to the tip.
+The last node to have a vertebra, from the base of the rod to the tip.
         
 #### vertebra_mass: (float)
-        Total mass of a single vertebra.
+Total mass of a single vertebra.
         
 #### tension: (float)
-        Tension applied to the tendon in the system.
+Tension applied to the tendon in the system.
         
 #### vertebra_height_orientation: (numpy.ndarray)
-        1D (dim) numpy array. Describes the orientatation of the vertebrae in the system.
+1D (dim) numpy array. Describes the orientatation of the vertebrae in the system.
 
 #### n_elements: (int)
-        Total amount of nodes in the rod system. This value is set in the simulator and is copied to this class for later use.
+Total amount of nodes in the rod system. This value is set in the simulator and is copied to this class for later use.
 
 The structure of TendonForces is such that it is allowed to use several different tendon configurations simultaneously in one simulation, and because tension is one of the arguments provided, the application of the tendon actuation is always done in an open-loop.
 
@@ -78,6 +78,8 @@ To correctly setup and use the `TendonForces.py` module:
    ```python
    from elastica.external_forces import TendonForces
    ```
+
+**NOTE: the examples provided in this repository assume that the TendonForces class is defined inside external_forces.py.**
 ## Running Examples
 
 To see how to use the module, you can run the provided examples:
@@ -85,8 +87,6 @@ To see how to use the module, you can run the provided examples:
 - For visualization: **example_with_visualization.py**
 
 - Without visualization: **example_no_visualization.py**
-
-**NOTE: the examples provided in this repository assume that the TendonForces class is defined inside external_forces.py.**
 
 ## Dependencies
 
