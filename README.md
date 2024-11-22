@@ -1,5 +1,6 @@
 # TendonForces
-This repository is a validated forcing module that can be used in the open-source simulation software PyElastica. This forcing module applies the external forcing effects of tendon actuation on a rod. The validation of this forcing module was done through physical experimentation, results which can be seen here: (INCLUDE RESULTS)
+This repository is a validated forcing module that can be used in the open-source simulation software PyElastica. This forcing module applies the external forcing effects of tendon actuation on a rod. The validation of this forcing module was done through physical experimentation, results which can be seen in **TendonForce_Explanation.pdf** included in the repo. The PDF also contains information regarding the mathematical procedure taken in the external forcing module.
+
 
 To use this forcing module, you must first be sure to have installed PyElastica properly (follow the procedure in their repo https://github.com/GazzolaLab/PyElastica)
 
