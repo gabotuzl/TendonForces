@@ -41,7 +41,7 @@ To utilize the TendonForces external forcing module for PyElastica, please follo
 
 ### Prerequisites
 
-Ensure you have [PyElastica](https://github.com/yourusername/PyElastica) installed. If you haven't installed it yet, please refer to its documentation for installation instructions (https://github.com/yourusername/PyElastica).
+Ensure you have [PyElastica](https://github.com/GazzolaLab/PyElastica) installed. If you haven't installed it yet, please refer to its documentation for installation instructions (https://github.com/GazzolaLab/PyElastica).
 
 ### Using Git
 #### Cloning the Repository
